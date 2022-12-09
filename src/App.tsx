@@ -1,6 +1,10 @@
+import Header from '../src/modules/shared/header/Main'
+
 function App() {
   return (
-    <p>React</p>
+    <>
+      <Header />
+    </>
   )
 }
 

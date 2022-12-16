@@ -1,0 +1,1 @@
+export const homeImagesRoute: string = './assets/images/home-page'

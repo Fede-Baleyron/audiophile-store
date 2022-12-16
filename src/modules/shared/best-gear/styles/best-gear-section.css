@@ -1,0 +1,34 @@
+.best-gear-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 1rem 1rem;
+}
+.best-gear-img {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  border-radius: 8px;
+}
+.best-gear-section-slogan-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 2rem;
+  max-width: 440px;
+}
+.slogan-title {
+  width: 100%;
+  color: var(--neutral-dark);
+  font-size: 2rem;
+  text-align: center;
+}
+.slogan-title-important-word {
+  color: var(--primary-dark);
+}
+.slogan-para {
+  width: 100%;
+  color: var(--neutral-gray-light);
+  line-height: 25px;
+  text-align: center;
+}

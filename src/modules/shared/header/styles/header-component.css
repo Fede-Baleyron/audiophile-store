@@ -4,7 +4,9 @@
   align-items: center;
   width: 100%;
   height: 80px;
+  margin-inline: auto;
   padding-inline: 1rem;
+  background-color: var(--neutral-dark);
   border-bottom: 2px solid hsla(0, 0%, 60%, .10);
 }
 .store-title {

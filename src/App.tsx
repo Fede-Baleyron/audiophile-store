@@ -1,9 +1,15 @@
+import { RoutesHandler } from './RoutesHandler'
 import Header from '../src/modules/shared/header/Main'
+import BestGearSection from './modules/shared/best-gear/Main'
 
 function App() {
   return (
     <>
-      <Header />
+      <div className='first-view-layout'>
+        <Header />
+        <RoutesHandler />
+      </div>
+      <BestGearSection />
     </>
   )
 }

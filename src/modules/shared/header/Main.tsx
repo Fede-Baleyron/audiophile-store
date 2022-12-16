@@ -4,7 +4,7 @@ import './styles/header-component.css'
 
 const Main = () => {
   return (
-    <header className='header-container'>
+    <header className='header-container max-w'>
       <MenuIcon />
       <p className='store-title'>audiofilia</p>
       <CartIcon />

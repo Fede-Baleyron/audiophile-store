@@ -7,7 +7,7 @@ const Main = () => {
     <footer className='footer-container'>
       <section className='footer-top-container'>
         <p className='store-title'>audiofilia</p>
-        <Menu />
+        <Menu zone='footer' />
       </section>
       <section className='footer-middle-container'>
         <p className='txt-gray-light txt-center txt-height'>

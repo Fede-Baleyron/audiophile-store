@@ -45,3 +45,9 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .header-store-title {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+}

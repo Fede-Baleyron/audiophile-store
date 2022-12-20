@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <header className='header-container max-w'>
       <MenuIcon />
-      <p className='store-title'>audiofilia</p>
+      <p className='store-title header-store-title'>audiofilia</p>
       <CartIcon />
       <ul></ul>
     </header>

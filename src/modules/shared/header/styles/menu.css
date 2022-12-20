@@ -1,4 +1,8 @@
-.menu-items-wrapper {
+.menu-items-wrapper-header {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.menu-items-wrapper-footer {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -8,7 +12,19 @@
 .menu-item {
   font-weight: 700;
   letter-spacing: 2.5px;
+  color: hsl(0, 0%, 90%);
+}
+.menu-item-header {
+  font-size: .8rem;
 }
 .menu-item-footer {
-  color: hsl(0, 0%, 90%);
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1201px) {
+  .menu-items-wrapper-header {
+    justify-self: end;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
 }

@@ -1,16 +1,18 @@
+import { useDetectUserWidth } from '../../../hooks/useDetectUserWidth'
 import { iconsPath } from '../../helpers/imagesRoutes'
 import { Menu } from '../header/components/Menu'
 import './styles/footer-container.css'
 
 const Main = () => {
+  const tabletBK: boolean = useDetectUserWidth(799).isWidth
   return (
     <footer className='footer-container'>
       <section className='footer-top-container'>
-        <p className='store-title'>audiofilia</p>
-        <Menu zone='footer' />
+        <p className='store-title footer-store-title'>audiofilia</p>
+        <Menu zone={tabletBK ? 'header' : 'footer'} />
       </section>
       <section className='footer-middle-container'>
-        <p className='txt-gray-light txt-center txt-height'>
+        <p className={`txt-gray-light txt-height ${tabletBK ? '' : 'txt-center'}`}>
           Audiofilia es una tienda en la que debes parar sí o sí para cumplir con tus necesidades de audio.
           Somos un equipo pequeño amantes de la música y especialistas en sonido y, con devoción, te ayudamos
           a conseguir lo mejor en cuanto audio. Ven y visita nuestra tienda demo - estamos abiertos los 7 días de la semana.

@@ -32,3 +32,26 @@
   line-height: 25px;
   text-align: center;
 }
+@media screen and (min-width: 1201px) {
+  .best-gear-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .best-gear-img {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    height: 600px;
+    object-position: center;
+  }
+  .best-gear-section-slogan-wrapper {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    max-width: 500px;
+  }
+  .slogan-para {
+    font-size: 1.2rem;
+    text-align: start;
+    line-height: 30px;
+  }
+}

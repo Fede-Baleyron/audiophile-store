@@ -2,7 +2,11 @@ import { MenuItemObjectType } from '../utils/header-types'
 import { MenuItem } from './MenuItem'
 import '../styles/menu.css'
 
-export const Menu = () => {
+type Prop = {
+  zone: string
+}
+
+export const Menu = ({zone}: Prop) => {
   const menuItems: MenuItemObjectType[] = [
     {name: 'Inicio', id: 1},
     {name: 'Cascos', id: 2},
@@ -10,12 +14,12 @@ export const Menu = () => {
     {name: 'Auriculares', id: 4},
   ]
   return (
-    <ul className='menu-items-wrapper'>
+    <ul className={`menu-items-wrapper-${zone}`}>
       {menuItems.map(item => (
         <MenuItem
           key={item.id}
           title={item.name.toUpperCase()}
-          classNames={['menu-item-footer']}
+          classNames={[`menu-item-${zone}`]}
         />
       ))}
     </ul>

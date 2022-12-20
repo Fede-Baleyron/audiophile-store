@@ -1,0 +1,14 @@
+.menu-items-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 1.5rem;
+  margin-top: 2rem;
+}
+.menu-item {
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.menu-item-footer {
+  color: hsl(0, 0%, 90%);
+}

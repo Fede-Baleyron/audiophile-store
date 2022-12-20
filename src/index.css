@@ -22,8 +22,29 @@ body {
   min-height: 100vh;
 }
 main {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 3rem;
   width: 100%;
   min-height: 100vh;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.fw-bold-700 {
+  font-weight: 700;
+}
+.txt-gray-light {
+  color: var(--neutral-gray-light);
+}
+.txt-center {
+  text-align: center;
+}
+.txt-height {
+  line-height: 25px;
 }
 .max-w {
   width: 100%;

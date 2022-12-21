@@ -16,14 +16,15 @@ const MenuIcon = lazy(() => import('./components/MenuIcon')
 const Main = () => {
   const desktopBK: boolean = useDetectUserWidth(1200).isWidth
   return (
-    <header className='header-container max-w'>
-      <Suspense>
-        {desktopBK || <MenuIcon />}
-        {desktopBK && <HeaderMenu zone='header' />}
-      </Suspense>
-      <p className='store-title header-store-title'>audiofilia</p>
-      <CartIcon />
-      <ul></ul>
+    <header className='header-container'>
+      <div className='header-wrapper max-w'>
+        <Suspense>
+            {desktopBK || <MenuIcon />}
+            {desktopBK && <HeaderMenu zone='header' />}
+        </Suspense>
+        <p className='store-title header-store-title'>audiofilia</p>
+        <CartIcon />
+      </div>
     </header>
   )
 }

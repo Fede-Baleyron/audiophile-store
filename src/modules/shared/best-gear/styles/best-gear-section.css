@@ -37,6 +37,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    padding: 0;
   }
   .best-gear-img {
     grid-row: 1 / 2;
@@ -50,7 +51,7 @@
     max-width: 500px;
   }
   .slogan-para {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: start;
     line-height: 30px;
   }

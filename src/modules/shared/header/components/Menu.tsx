@@ -1,12 +1,8 @@
-import { MenuItemObjectType } from '../utils/header-types'
+import { MenuItemObjectType, MenuProp } from '../utils/header-types'
 import { MenuItem } from './MenuItem'
 import '../styles/menu.css'
 
-type Prop = {
-  zone: string
-}
-
-export const Menu = ({zone}: Prop) => {
+export const Menu = ({zone}: MenuProp) => {
   const menuItems: MenuItemObjectType[] = [
     {name: 'Inicio', id: 1},
     {name: 'Cascos', id: 2},

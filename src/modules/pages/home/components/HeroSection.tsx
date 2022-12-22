@@ -1,7 +1,7 @@
 import { NewProductNotification } from './NewProductNotification'
 import { homeImagesRoute } from '../../../helpers/imagesRoutes'
 import '../styles/hero-section.css'
-import { HeroSectionProp } from '../utils/hero-section-types'
+import { HeroSectionProp } from '../utils/types'
 import { Button } from '../../../shared/Button'
 
 export const HeroSection = (props: HeroSectionProp) => {

@@ -1,0 +1,10 @@
+.new-product {
+  font-size: .9rem;
+  letter-spacing: 10px;
+}
+.new-product-primary {
+  color: var(--primary-dark);
+}
+.new-product-secondary {
+  color: var(--neutral-gray-light);
+}

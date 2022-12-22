@@ -6,10 +6,8 @@ import Footer from './modules/shared/footer/Main'
 function App() {
   return (
     <>
-      <div className='first-view-layout'>
-        <Header />
-        <RoutesHandler />
-      </div>
+      <Header />
+      <RoutesHandler />
       <BestGearSection />
       <Footer />
     </>

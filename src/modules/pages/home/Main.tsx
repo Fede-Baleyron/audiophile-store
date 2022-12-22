@@ -1,9 +1,15 @@
+import { HeroSection } from "./components/HeroSection"
+
 const Main = () => {
   return (
-    <div style={{height: '100%'}}>
-      <section className='hero-section max-w' style={{height: '100%'}}>Main</section>
-      <div style={{backgroundColor: 'black'}}>sadasd</div>
-    </div>
+    <>
+      <HeroSection
+        importance='secondary'
+        title='CASCOS XX99 MARK I'
+        description='Experimenta un sonido de calidad natural construido con una calidad excepcional, 
+        para aquellos apasionados y entusiastas de la música.'
+      />
+    </>
   )
 }
 

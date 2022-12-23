@@ -1,4 +1,6 @@
+import { CategoryCard } from './components/CategoryCard'
 import { HeroSection } from './components/HeroSection'
+import './styles/home.css'
 
 const Main = () => {
   return (
@@ -9,6 +11,20 @@ const Main = () => {
         description='Experimenta un sonido de calidad natural construido con una calidad excepcional, 
         para aquellos apasionados y entusiastas de la música.'
       />
+      <section className='categories-cards-section max-w'>
+        <CategoryCard 
+          title='CASCOS'
+          imageName='headphone'
+        />
+        <CategoryCard 
+          title='PARLANTES'
+          imageName='speaker'
+        />
+        <CategoryCard 
+          title='AURICULARES'
+          imageName='earphone'
+        />
+      </section>
     </>
   )
 }

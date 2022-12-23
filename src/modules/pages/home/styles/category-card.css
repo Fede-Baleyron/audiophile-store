@@ -50,6 +50,6 @@
   align-self: center;
   width: 10px;
   height: 10px;
-  background: url('./assets/icons/icon-arrow.svg') no-repeat;
+  background: url('/assets/icons/icon-arrow.svg') no-repeat;
   background-size: 100% 100%;
 }

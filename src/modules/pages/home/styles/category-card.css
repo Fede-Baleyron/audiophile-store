@@ -36,8 +36,20 @@
   letter-spacing: 1.5px;
 }
 .category-card-link {
+  position: relative;
+  display: grid;
   font-size: .9rem;
   color: var(--neutral-gray-light);
   font-weight: 800;
   letter-spacing: 1.5px;
+}
+.category-card-link::after {
+  position: absolute;
+  content: '';
+  right: -15px;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  background: url('./assets/icons/icon-arrow.svg') no-repeat;
+  background-size: 100% 100%;
 }

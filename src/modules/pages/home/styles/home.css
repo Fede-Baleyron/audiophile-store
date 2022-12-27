@@ -7,3 +7,8 @@
   margin-top: 2rem;
   padding: 0 1rem;
 }
+.popular-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+

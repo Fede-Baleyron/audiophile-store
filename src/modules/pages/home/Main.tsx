@@ -25,6 +25,8 @@ const Main = () => {
           imageName='earphone'
         />
       </section>
+      <section className='popular-section'>
+      </section>
     </>
   )
 }

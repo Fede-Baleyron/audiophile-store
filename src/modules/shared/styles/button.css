@@ -1,8 +1,11 @@
 .button {
+  padding: .8rem 1rem;
+  border-radius: 5px;
   letter-spacing: 1.5px;
 }
 .button-primary {
-  padding: .8rem 1rem;
   background-color: var(--primary-dark);
-  border-radius: 5px;
+}
+.button-neutral-dark {
+  background-color: var(--neutral-dark);
 }

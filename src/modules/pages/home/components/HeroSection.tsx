@@ -14,7 +14,7 @@ export const HeroSection = (props: HeroSectionProp) => {
           <p className='new-prod-description'>
             {props.description}
           </p>
-          <Button text='VER PRODUCTO' link={props.link} />
+          <Button text='VER PRODUCTO' type='primary' link={props.link} />
         </article>
         <article className='hero-section-img'>
           <img

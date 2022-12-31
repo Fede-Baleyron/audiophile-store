@@ -6,6 +6,10 @@
 .button-primary {
   background-color: var(--primary-dark);
 }
+.button-secondary {
+  color: var(--neutral-dark);
+  border: 1px solid var(--neutral-dark);
+}
 .button-neutral-dark {
   background-color: var(--neutral-dark);
 }

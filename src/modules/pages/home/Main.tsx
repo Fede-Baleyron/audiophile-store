@@ -1,5 +1,6 @@
 import { CategoryCard } from './components/CategoryCard'
 import { HeroSection } from './components/HeroSection'
+import { YX1Card } from './components/YX1Card'
 import { ZX7Card } from './components/ZX7Card'
 import { ZX9Card } from './components/ZX9Card'
 import './styles/home.css'
@@ -30,6 +31,7 @@ const Main = () => {
       <section className='popular-section'>
         <ZX9Card />
         <ZX7Card />
+        <YX1Card />
       </section>
     </>
   )

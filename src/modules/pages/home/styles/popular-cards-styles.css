@@ -91,3 +91,37 @@
   font-weight: 600;
   background: transparent;
 }
+
+.yx1-card-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  padding-inline: 1rem;
+}
+.yx1-card-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  row-gap: 1.5rem;
+  width: 100%;
+  padding: 1.3rem;
+  background: hsla(0, 0%, 50%, .15);
+  border-radius: 8px;
+}
+.yx1-card-wrapper > img {
+  width: 100%;
+  border-radius: 8px;
+}
+.yx1-card-info > h4 {
+  color: var(--neutral-dark);
+  font-size: 1.5rem;
+  letter-spacing: 1.3px;
+}
+.yx1-card-info > button {
+  width: max-content;
+  font-weight: 600;
+  background: transparent;
+}

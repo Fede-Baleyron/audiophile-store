@@ -3,8 +3,11 @@ import { homeImagesRoute } from '../../../helpers/imagesRoutes'
 import '../styles/hero-section.css'
 import { HeroSectionProp } from '../utils/types'
 import { Button } from '../../../shared/Button'
+import { useDetectUserWidth } from '../../../../hooks/useDetectUserWidth'
 
 export const HeroSection = (props: HeroSectionProp) => {
+  const isDesktop = useDetectUserWidth(1201).isWidth
+  const imgName = isDesktop ? 'desktop' : 'mobile'
   return (
     <div className='hero-section-container'>
       <section className='hero-section-wrapper max-w'>
@@ -19,7 +22,7 @@ export const HeroSection = (props: HeroSectionProp) => {
         <article className='hero-section-img'>
           <img
             className='hero-img'
-            src={`${homeImagesRoute}/hero-img-mobile.jpg`} 
+            src={`${homeImagesRoute}/hero-img-${imgName}.jpg`} 
             alt='' 
           />
         </article>

@@ -10,7 +10,7 @@ const Main = () => {
     <>
       <HeroSection
         importance='secondary'
-        title='CASCOS XX99 MARK I'
+        title='CASCOS XX99 MARK II'
         description='Experimenta un sonido de calidad natural construido con una calidad excepcional, 
         para aquellos apasionados y entusiastas de la música.'
       />

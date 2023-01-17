@@ -4,7 +4,7 @@ import { NewProductProp } from '../utils/types'
 export const NewProductNotification = ({importance, text}: NewProductProp) => {
   return (
     <p className={`new-product new-product-${importance}`}>
-      {text || 'NEW PRODUCT'}
+      {text || 'NUEVO PRODUCTO'}
     </p>
   )
 }

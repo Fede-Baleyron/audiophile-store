@@ -9,6 +9,14 @@
   margin-top: 2rem;
   padding: 0 1rem;
 }
+.zx9-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+}
 .popular-card-layer-zx9 {
   position: absolute;
   width: calc(100% - 2rem);
@@ -28,9 +36,9 @@
 }
 .popular-card-img-zx9 {
   position: relative;
-  width: 70%;
+  width: 100%;
   max-width: 250px;
-  height: 50%;
+  height: 100%;
   z-index: 10;
 }
 .popular-card-description-wrapper {
@@ -44,11 +52,13 @@
   max-width: 200px;
   margin: 0 auto;
   font-size: 2rem;
+  text-align: center;
 }
 .popular-card-zx9-description {
   max-width: 280px;
   color: hsl(0, 0%, 90%);
   font-size: .9rem;
+  text-align: center;
 }
 
 .popular-card-wrapper-zx7 {
@@ -125,4 +135,42 @@
   width: max-content;
   font-weight: 600;
   background: transparent;
+}
+@media screen and (min-width: 1201px) {
+  .popular-card-wrapper-zx9 {
+    flex-flow: row wrap;
+    align-items: start;
+    max-width: 1228px;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+  .zx9-img-container {
+    position: relative;
+    width: 30%;
+    height: 100%;
+  }
+  .popular-card-img-zx9 {
+    position: absolute;
+    left: -120px;
+    bottom: -10px;
+    width: 400px;
+    max-width: max-content;
+    height: 400px;
+  }
+  .popular-card-description-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    width: 30%;
+    height: 100%;
+  }
+  .popular-card-zx9-title {
+    max-width: 100%;
+    margin: 0;
+    font-size: 3rem;
+    text-align: start;
+  }
+  .popular-card-zx9-description {
+    max-width: 100%;
+    text-align: start;
+  }
 }

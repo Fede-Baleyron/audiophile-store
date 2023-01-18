@@ -153,7 +153,7 @@
     max-height: max-content;
   }
   .yx1-card-info > h4 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 } 
 @media screen and (min-width: 1201px) {
@@ -196,6 +196,9 @@
     margin-inline: auto;
   }
   .popular-card-zx7-info-wrapper > h4 {
+    font-size: 3rem;
+  }
+  .yx1-card-info > h4 {
     font-size: 3rem;
   }
 }

@@ -103,13 +103,15 @@
   background: transparent;
 }
 
-.yx1-card-wrapper {
+.popular-card-wrapper-yx1 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   row-gap: 2rem;
   width: 100%;
+  max-width: 1260px;
   height: 400px;
   margin-top: 2rem;
+  margin-inline: auto;
   padding-inline: 1rem;
 }
 .yx1-card-info {
@@ -122,8 +124,9 @@
   background: hsla(0, 0%, 50%, .15);
   border-radius: 8px;
 }
-.yx1-card-wrapper > img {
+.popular-card-wrapper-yx1 > img {
   width: 100%;
+  max-height: 200px;
   border-radius: 8px;
 }
 .yx1-card-info > h4 {
@@ -174,7 +177,9 @@
     text-align: start;
   }
   .popular-card-wrapper-zx7 {
-    max-width: 1260px;
     margin-inline: auto;
+  }
+  .popular-card-zx7-info-wrapper > h4 {
+    font-size: 3rem;
   }
 }

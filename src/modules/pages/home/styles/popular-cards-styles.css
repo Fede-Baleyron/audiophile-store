@@ -173,4 +173,8 @@
     max-width: 100%;
     text-align: start;
   }
+  .popular-card-wrapper-zx7 {
+    max-width: 1260px;
+    margin-inline: auto;
+  }
 }

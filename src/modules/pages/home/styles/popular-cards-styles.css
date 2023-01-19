@@ -32,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 60%;
-  background: url('assets/icons/icon-pattern-circles.svg') no-repeat;
+  background: url('/assets/icons/icon-pattern-circles.svg') no-repeat;
   background-size: 100% 100%;
 }
 .popular-card-img-zx9 {

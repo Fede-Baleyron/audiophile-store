@@ -1,7 +1,6 @@
 import { useDetectUserWidth } from '../../../../hooks/useDetectUserWidth'
 import { homeImagesRoute, iconsPath } from '../../../helpers/imagesRoutes'
 import { Button } from '../../../shared/Button'
-import '../styles/popular-cards-styles.css'
 
 export const ZX9Card = () => {
   const isDesktop = useDetectUserWidth(1201).isWidth

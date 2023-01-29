@@ -1,0 +1,15 @@
+.product-counter-wrapper {
+  display: flex;
+  column-gap: 1rem;
+  width: max-content;
+  height: max-content;
+  padding: .8rem 1rem;
+  background-color: hsla(0, 0%, 50%, .25);
+  border-radius: 5px;
+}
+.product-counter-value {
+  color: var(--neutral-dark);
+}
+.product-counter-minus, .product-counter-plus {
+  color: var(--neutral-gray-light);
+}

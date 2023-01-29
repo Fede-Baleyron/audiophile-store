@@ -7,6 +7,7 @@ export interface ProductCardProp {
   name: string
   path: string
   description: string
+  price?: number
   view: ('show' | 'sell')
   new: boolean
 }

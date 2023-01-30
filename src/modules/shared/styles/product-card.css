@@ -1,6 +1,7 @@
 .product-card-container {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   row-gap: 1rem;
   width: 100%;
   height: max-content;
@@ -41,4 +42,20 @@
 }
 .product-card-info-wrapper > .new-product {
   font-size: .7rem;
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .product-card-container.sell {
+    flex-flow: row wrap;
+  }
+  .product-card-img.sell {
+    width: 50%;
+  }
+  .product-card-info-wrapper.sell {
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .product-card-description.sell {
+    text-align: start;
+  }
 }

@@ -8,9 +8,10 @@ import './styles/product-card.css'
 export const ProductCard = (props: ProductCardProp) => {
   const show: boolean = props.view === 'show'
   const sell: boolean = props.view === 'sell'
+  const even: string = props.even ? 'even' : ''
   const isSellClass = sell ? 'sell' : ''
   return (
-    <article className={`product-card-container ${isSellClass}`}>
+    <article className={`product-card-container ${isSellClass} ${even}`}>
       <img
         className={`product-card-img ${isSellClass}`}
         src={`${productsPath}/${props.path}/image-product.jpg`}

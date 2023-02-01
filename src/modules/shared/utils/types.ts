@@ -11,3 +11,6 @@ export interface ProductCardProp {
   view: ('show' | 'sell')
   new: boolean
 }
+export interface CategoryPageProp {
+  category: string
+}

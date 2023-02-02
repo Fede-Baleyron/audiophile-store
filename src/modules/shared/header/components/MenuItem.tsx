@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { MenuItemProp } from '../utils/header-types'
 
 export const MenuItem = (props: MenuItemProp) => {
@@ -7,13 +8,7 @@ export const MenuItem = (props: MenuItemProp) => {
   : `/`
   return (
     <li className={`menu-item`}>
-      <a 
-        className={`${classes || ''}`} 
-        href={linkTo} 
-        rel='noopener noreferrer'
-      >
-        {props.title}
-      </a>
+      <Link className={`${classes || ''}`} to={linkTo}>{props.title}</Link>
     </li>
   )
 }

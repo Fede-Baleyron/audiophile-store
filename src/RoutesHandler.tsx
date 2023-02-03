@@ -1,20 +1,17 @@
 import { Route, Routes } from 'react-router-dom'
-import { CategoryPage } from './modules/shared/CategoryPage'
+import { HeadphonesLayout } from './modules/pages/headphones/HeadPhonesLayout'
+import { SpeakersLayout } from './modules/pages/speakers/SpeakersLayout'
 import HomeLayout from './modules/pages/home/Main'
+import { EarphonesLayout } from './modules/pages/earphones/EarphonesLayout'
 
-const categories: string[] = ['auriculares', 'cascos', 'parlantes']
 
 export const RoutesHandler = () => {
   return (
     <Routes>
       <Route path='/' element={<HomeLayout />} />
-      {categories.map((category, i) => (
-        <Route
-          key={i}
-          path={`/categorias/${category}`} 
-          element={<CategoryPage category={category.toUpperCase()} />} 
-        />
-      ))}
+      <Route path='/categorias/cascos' element={<HeadphonesLayout />} />
+      <Route path='/categorias/auriculares' element={<EarphonesLayout />} />
+      <Route path='/categorias/parlantes' element={<SpeakersLayout />} />
     </Routes>
   )
 }

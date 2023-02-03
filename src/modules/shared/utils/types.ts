@@ -1,3 +1,5 @@
+import React from 'react'
+
 export type ButtonProp = {
   text: string
   link?: string
@@ -14,4 +16,5 @@ export interface ProductCardProp {
 }
 export interface CategoryPageProp {
   category: string
+  children: React.ReactNode
 }

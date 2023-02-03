@@ -80,13 +80,14 @@
   }
   .product-card-container.even {
     display: grid;
+    grid-template-columns: 40% 60%;
   }
   .product-card-container.even > .product-card-info-wrapper {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-items: flex-end;
-    width: 100%;
-    max-width: inherit;
+    justify-self: end;
+    max-width: 378px;
   }
   .product-card-container.even > .product-card-img {
     grid-column: 2 / 3;

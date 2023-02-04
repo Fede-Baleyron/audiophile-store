@@ -44,6 +44,9 @@
 .product-card-info-wrapper > .new-product {
   font-size: .7rem;
 }
+.product-card-info-wrapper > .button {
+  font-size: .8rem;
+}
 @media screen and (min-width: 800px) {
   .product-card-container.sell {
     flex-flow: row wrap;

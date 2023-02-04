@@ -1,12 +1,11 @@
-import { useContext } from 'react'
+import { useCategoriesContext } from '../../../hooks/useCategoriesContext'
 import { ProductModel } from '../../../services/servicesTypes'
 import { CategoryPage } from '../../shared/CategoryPage'
 import { ProductCard } from '../../shared/ProductCard'
-import { CategoriesContext } from '../context/CategoriesProvider'
 
 export const EarphonesLayout = () => {
-  const contextData = useContext(CategoriesContext)
-  const earphones = contextData?.data?.auriculares
+  const { categoriesContext } = useCategoriesContext()
+  const earphones = categoriesContext?.data?.auriculares
   return (
     <CategoryPage category='auriculares'>
       {earphones && 

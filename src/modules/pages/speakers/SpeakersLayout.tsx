@@ -1,12 +1,11 @@
-import { useContext } from 'react'
+import { useCategoriesContext } from '../../../hooks/useCategoriesContext'
 import { ProductModel } from '../../../services/servicesTypes'
 import { CategoryPage } from '../../shared/CategoryPage'
 import { ProductCard } from '../../shared/ProductCard'
-import { CategoriesContext } from '../context/CategoriesProvider'
 
 export const SpeakersLayout = () => {
-  const contextData = useContext(CategoriesContext)
-  const speakers = contextData?.data?.parlantes
+  const { categoriesContext } = useCategoriesContext()
+  const speakers = categoriesContext?.data?.parlantes
   return (
     <CategoryPage category='parlantes'>
       {speakers && 

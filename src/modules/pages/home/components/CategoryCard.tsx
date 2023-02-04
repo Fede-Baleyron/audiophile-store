@@ -1,6 +1,7 @@
 import { iconsPath } from '../../../helpers/imagesRoutes'
-import '../styles/category-card.css'
 import { CategoryCardProp } from '../utils/types'
+import '../styles/category-card.css'
+import { Link } from 'react-router-dom'
 
 export const CategoryCard = (props: CategoryCardProp) => {
   return (
@@ -13,12 +14,12 @@ export const CategoryCard = (props: CategoryCardProp) => {
         />
         <div className='category-card-title-wrapper'>
           <h3 className='category-card-title'>{props.title}</h3>
-          <a 
+          <Link 
             className='category-card-link' 
-            href={`/categories/${props.categoryPath}`}
+            to={`/categorias/${props.title.toLowerCase()}`}
           >
             TIENDA
-          </a>
+          </Link>
         </div>
       </section>
       </article>

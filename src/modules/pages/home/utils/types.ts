@@ -9,7 +9,6 @@ export type HeroSectionProp = {
   link?: string
 }
 export type CategoryCardProp = {
-  categoryPath?: string
   title: string
   imageName: string
 }

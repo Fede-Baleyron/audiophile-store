@@ -1,4 +1,5 @@
 import { CategoryCard } from './CategoryCard'
+import '../styles/categories-cards-section.css'
 
 export const CategoriesCardsSection = () => {
   return (

@@ -31,7 +31,7 @@ export const DynamicWrapper = (props: DynamicWrapperProp) => {
           />
         ))}
       </article>
-      <div>
+      <div className='you-may-like-container'>
         <h5 className='dynamic-product-title'>TE PUEDE INTERESAR</h5>
         <CategoriesCardsSection />
       </div>

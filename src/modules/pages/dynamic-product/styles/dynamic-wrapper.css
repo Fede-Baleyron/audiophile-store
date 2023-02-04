@@ -42,3 +42,11 @@
 .dynamic-product-container > .product-card-container {
   padding: 0;
 }
+
+@media screen and (min-width: 340px) and (max-width: 1100px) {
+  .you-may-like-container > .categories-cards-section {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}

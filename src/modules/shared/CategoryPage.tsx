@@ -2,6 +2,7 @@ import { useContext, useEffect } from 'react'
 import { CategoryPageProp } from './utils/types'
 import { CategoriesContext } from '../pages/context/CategoriesProvider'
 import './styles/category-page-layout.css'
+import { Loader } from './Loader'
 
 export const CategoryPage = (props: CategoryPageProp) => {
   const { category } = props
@@ -19,7 +20,7 @@ export const CategoryPage = (props: CategoryPageProp) => {
           <p className='category-page-header-title'>{category.toUpperCase()}</p>
         </article>
       </div>
-      {props.children}
+      {contextData?.data[category] ? props.children : <Loader />}
     </section>
   )
 }

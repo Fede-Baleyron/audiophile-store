@@ -1,4 +1,4 @@
-interface ProductContain {
+export interface ProductContain {
   name: string
   quantity: number
 }

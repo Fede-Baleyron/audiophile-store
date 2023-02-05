@@ -1,9 +1,10 @@
+import { lazy } from 'react'
 import { useParams } from 'react-router-dom'
 import { ProductModel } from '../../../../services/servicesTypes'
 import { Loader } from '../../../shared/Loader'
 import { DynamicCardProp } from '../utils/dynamic-product-types'
 import { DynamicWrapper } from './DynamicWrapper'
-import ProductCard from '../../../shared/ProductCard'
+const ProductCard = lazy(() => import('../../../shared/ProductCard'))
 
 export const DynamicCard = ({ items }: DynamicCardProp) => {
   const { product } = useParams()

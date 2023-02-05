@@ -1,8 +1,8 @@
 import { useContext, useEffect } from 'react'
 import { CategoryPageProp } from './utils/types'
 import { CategoriesContext } from '../pages/context/CategoriesProvider'
-import './styles/category-page-layout.css'
 import { Loader } from './Loader'
+import './styles/category-page-layout.css'
 
 export const CategoryPage = (props: CategoryPageProp) => {
   const { category } = props

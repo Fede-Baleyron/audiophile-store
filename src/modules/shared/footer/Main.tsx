@@ -1,6 +1,6 @@
 import { useDetectUserWidth } from '../../../hooks/useDetectUserWidth'
 import { iconsPath } from '../../helpers/imagesRoutes'
-import { Menu } from '../header/components/Menu'
+import Menu from '../header/components/Menu'
 import './styles/footer-container.css'
 
 const Main = () => {

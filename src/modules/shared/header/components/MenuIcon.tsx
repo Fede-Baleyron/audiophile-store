@@ -1,6 +1,6 @@
 import { iconsPath } from "../../../helpers/imagesRoutes"
 
-export const MenuIcon = () => {
+const MenuIcon = () => {
   return (
     <div className='menu-icon-container'>
       <img 
@@ -11,3 +11,5 @@ export const MenuIcon = () => {
     </div>
   )
 }
+
+export default MenuIcon

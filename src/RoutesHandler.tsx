@@ -1,10 +1,11 @@
+import { lazy } from 'react'
 import { Outlet, Route, Routes } from 'react-router-dom'
-import { HeadphonesLayout } from './modules/pages/headphones/HeadPhonesLayout'
-import { SpeakersLayout } from './modules/pages/speakers/SpeakersLayout'
-import { EarphonesLayout } from './modules/pages/earphones/EarphonesLayout'
 import { AppLayout } from './AppLayout'
-import DynamicProduct from './modules/pages/dynamic-product/Main'
-import HomeLayout from './modules/pages/home/Main'
+const HeadphonesLayout = lazy(() => import('./modules/pages/headphones/HeadphonesLayout'))
+const SpeakersLayout = lazy(() => import('./modules/pages/speakers/SpeakersLayout'))
+const EarphonesLayout = lazy(() => import('./modules/pages/earphones/EarphonesLayout'))
+const DynamicProduct = lazy(() => import('./modules/pages/dynamic-product/Main'))
+const HomeLayout = lazy(() => import('./modules/pages/home/Main'))
 
 
 export const RoutesHandler = () => {
@@ -12,10 +13,10 @@ export const RoutesHandler = () => {
     <Routes>
       <Route element={<AppLayout><Outlet /></AppLayout>}>
         <Route path='/' element={<HomeLayout />} />
-        <Route path='/categorias/cascos' element={<HeadphonesLayout />} />
-        <Route path='/categorias/auriculares' element={<EarphonesLayout />} />
-        <Route path='/categorias/parlantes' element={<SpeakersLayout />} />
-        <Route path='/categorias/:category/:product' element={<DynamicProduct />} />
+          <Route path='/categorias/cascos' element={<HeadphonesLayout />} />
+          <Route path='/categorias/auriculares' element={<EarphonesLayout />} />
+          <Route path='/categorias/parlantes' element={<SpeakersLayout />} />
+          <Route path='/categorias/:category/:product' element={<DynamicProduct />} />
       </Route>
     </Routes>
   )

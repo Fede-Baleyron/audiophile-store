@@ -2,7 +2,7 @@ import { MenuItemObjectType, MenuProp } from '../utils/header-types'
 import { MenuItem } from './MenuItem'
 import '../styles/menu.css'
 
-export const Menu = ({zone}: MenuProp) => {
+const Menu = ({zone}: MenuProp) => {
   const menuItems: MenuItemObjectType[] = [
     {name: 'Inicio', id: 1},
     {name: 'Cascos', id: 2},
@@ -21,3 +21,5 @@ export const Menu = ({zone}: MenuProp) => {
     </ul>
   )
 }
+
+export default Menu

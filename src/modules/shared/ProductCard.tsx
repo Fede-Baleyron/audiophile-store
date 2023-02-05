@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom'
 import ProductCounter from './ProductCounter'
 import './styles/product-card.css'
 
-export const ProductCard = (props: ProductCardProp) => {
+const ProductCard = (props: ProductCardProp) => {
   const show: boolean = props.view === 'show'
   const sell: boolean = props.view === 'sell'
   const even: string = props.even ? 'even' : ''
@@ -42,3 +42,5 @@ export const ProductCard = (props: ProductCardProp) => {
     </article>
   )
 }
+
+export default ProductCard

@@ -1,9 +1,10 @@
+import { lazy } from 'react'
 import { useCategoriesContext } from '../../../hooks/useCategoriesContext'
 import { ProductModel } from '../../../services/servicesTypes'
 import { CategoryPage } from '../../shared/CategoryPage'
-import { ProductCard } from '../../shared/ProductCard'
+const ProductCard = lazy(() => import('../../shared/ProductCard'))
 
-export const SpeakersLayout = () => {
+const SpeakersLayout = () => {
   const { categoriesContext } = useCategoriesContext()
   const speakers = categoriesContext?.data?.parlantes
   return (
@@ -23,3 +24,5 @@ export const SpeakersLayout = () => {
     </CategoryPage>
   )
 }
+
+export default SpeakersLayout

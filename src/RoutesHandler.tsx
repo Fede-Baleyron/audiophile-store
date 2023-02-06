@@ -1,7 +1,7 @@
 import { lazy } from 'react'
 import { Outlet, Route, Routes } from 'react-router-dom'
 import { AppLayout } from './AppLayout'
-const HeadphonesLayout = lazy(() => import('./modules/pages/headphones/HeadphonesLayout'))
+const HeadphonesLayout = lazy(() => import('./modules/pages/headphones/HeadPhonesLayout'))
 const SpeakersLayout = lazy(() => import('./modules/pages/speakers/SpeakersLayout'))
 const EarphonesLayout = lazy(() => import('./modules/pages/earphones/EarphonesLayout'))
 const DynamicProduct = lazy(() => import('./modules/pages/dynamic-product/Main'))

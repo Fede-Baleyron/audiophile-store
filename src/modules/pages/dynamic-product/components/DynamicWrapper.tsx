@@ -8,19 +8,21 @@ export const DynamicWrapper = (props: DynamicWrapperProp) => {
   return (
     <section className='dynamic-product-container'>
       {children}
-      <article className='dynamic-info-wrapper features-wrapper'>
-        <h5 className='dynamic-product-title'>CARACTERÍSTICAS</h5>
-        <p className='dynamic-product-subtext'>{features}</p>
-      </article>
-      <article className='dynamic-info-wrapper dynamic-contains-container'>
-        <h5 className='dynamic-product-title'>CONTIENE</h5>
-          {contains.map((item, i) => (
-            <div key={i} className='dynamic-contains-wrapper'>
-              <p className='dynamic-contains-quantity'>x{item.quantity}</p>
-              <p className='dynamic-contains-item'>{item.name}</p>
-            </div>
-          ))}
-      </article>
+      <div className='dynamic-info-container'>
+        <article className='dynamic-info-wrapper features-wrapper'>
+          <h5 className='dynamic-product-title'>CARACTERÍSTICAS</h5>
+          <p className='dynamic-product-subtext'>{features}</p>
+        </article>
+        <article className='dynamic-info-wrapper dynamic-contains-container'>
+          <h5 className='dynamic-product-title'>CONTIENE</h5>
+            {contains.map((item, i) => (
+              <div key={i} className='dynamic-contains-wrapper'>
+                <p className='dynamic-contains-quantity'>x{item.quantity}</p>
+                <p className='dynamic-contains-item'>{item.name}</p>
+              </div>
+            ))}
+        </article>
+      </div>
       <article className='dynamic-gallery-wrapper'>
         {gallery.map((img, i) => (
           <img

@@ -1,7 +1,7 @@
 import { lazy } from 'react'
 import { useCategoriesContext } from '../../../hooks/useCategoriesContext'
-import { ProductModel } from '../../../services/servicesTypes'
 import { CategoryPage } from '../../shared/CategoryPage'
+import { ProductModel } from '../../../services/servicesTypes'
 const ProductCard = lazy(() => import('../../shared/ProductCard'))
 
 const HeadphonesLayout = () => {

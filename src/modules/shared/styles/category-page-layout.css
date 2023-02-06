@@ -1,6 +1,14 @@
 .category-section-container {
+  display: flex;
+  flex-flow: column wrap;
   width: 100%;
   min-height: 100vh;
+}
+.products-layout-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 2rem;
+  margin-top: 2rem;
 }
 .category-section-wrapper {
   width: 100%;

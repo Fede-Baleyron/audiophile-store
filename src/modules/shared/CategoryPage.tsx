@@ -20,7 +20,9 @@ export const CategoryPage = (props: CategoryPageProp) => {
           <p className='category-page-header-title'>{category.toUpperCase()}</p>
         </article>
       </div>
-      {contextData?.data[category] ? props.children : <Loader />}
+      <div className='products-layout-wrapper'>
+        {contextData?.data[category] ? props.children : <Loader />}
+      </div>
     </section>
   )
 }

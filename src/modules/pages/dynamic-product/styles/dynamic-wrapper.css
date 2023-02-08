@@ -75,6 +75,10 @@
     flex-flow: column wrap;
     padding: 0;
   }
+  .you-may-like-container > .categories-cards-section > .category-card-container {
+    max-width: 400px;
+    margin-inline: auto;
+  }
 }
 @media screen and (min-width: 1201px) {
   .dynamic-info-container {

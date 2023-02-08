@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { MenuItemProp } from '../utils/header-types'
 
 export const MenuItem = (props: MenuItemProp) => {
@@ -8,7 +8,16 @@ export const MenuItem = (props: MenuItemProp) => {
   : `/`
   return (
     <li className={`menu-item`}>
-      <Link className={`${classes || ''}`} to={linkTo}>{props.title}</Link>
+      <NavLink 
+        to={linkTo} 
+        className={({isActive}: {isActive: boolean}) => isActive 
+          ? `${classes} active` 
+          : `${classes}`
+        }
+        end
+      >
+        {props.title}
+      </NavLink>
     </li>
   )
 }

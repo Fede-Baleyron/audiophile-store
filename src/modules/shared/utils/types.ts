@@ -18,3 +18,11 @@ export interface CategoryPageProp {
   category: string
   children: React.ReactNode
 }
+export interface ModalProp {
+  children: React.ReactNode
+  className?: string
+  closeModal: React.MouseEventHandler
+}
+export interface PortalProp {
+  element: React.ReactNode
+}

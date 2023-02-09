@@ -78,6 +78,7 @@
   border-radius: 8px;
 }
 .popular-card-zx7-info-wrapper {
+  position: relative;
   display: flex;
   flex-flow: column wrap;
   align-items: center;

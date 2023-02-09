@@ -1,4 +1,5 @@
 import { lazy } from 'react'
+import { Link } from 'react-router-dom'
 import { useDetectUserWidth } from '../../../hooks/useDetectUserWidth'
 import { CartIcon } from './components/CartIcon'
 const HeaderMenu = lazy(() => import('./components/Menu'))
@@ -12,7 +13,7 @@ const Main = () => {
       <div className='header-wrapper max-w'>
         {desktopBK || <MenuIcon />}
         {desktopBK && <HeaderMenu zone='header' />}
-        <p className='store-title header-store-title'>audiofilia</p>
+        <Link to='/' className='store-title header-store-title'>audiofilia</Link>
         <CartIcon />
       </div>
     </header>

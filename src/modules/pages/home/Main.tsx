@@ -11,6 +11,7 @@ const Main = () => {
   return (
     <>
       <HeroSection
+        link='categorias/cascos/xx99-mark-ii'
         importance='secondary'
         title='CASCOS XX99 MARK II'
         description='Experimenta un sonido de calidad natural construido con una calidad excepcional, 

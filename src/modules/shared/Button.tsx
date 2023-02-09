@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ButtonProp } from './utils/types'
 import './styles/button.css'
 
@@ -7,9 +8,9 @@ export const Button = ({text, link, type}: ButtonProp) => {
       type='button'
       className={`button button-${type}`}
     >
-      <a href={link || ''}>
+      <Link to={link || ''}>
         {text}
-      </a>
+      </Link>
     </button>
   )
 }

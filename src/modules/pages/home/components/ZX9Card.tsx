@@ -24,7 +24,7 @@ export const ZX9Card = () => {
         <p className='popular-card-zx9-description'>
           Actualiza tus parlantes a unos construidos con un sonido excelente.
         </p>
-        <Button text='VER PRODUCTO' type='neutral-dark' />
+        <Button text='VER PRODUCTO' type='neutral-dark' link='/categorias/parlantes/zx9' />
       </div>
     </article>
   )

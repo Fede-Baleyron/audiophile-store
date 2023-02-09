@@ -9,7 +9,7 @@ export const ZX7Card = () => {
         <img src={`${homeImagesRoute}/speaker-zx7-${mode}.png`} alt="" />
         <section className='popular-card-zx7-info-wrapper'>
           <h4 className='txt-center'>PARLANTE ZX7</h4>
-          <Button text='VER PRODUCTO' type='secondary' />
+          <Button text='VER PRODUCTO' type='secondary' link='/categorias/parlantes/zx7' />
         </section>
       </div>
     </article>

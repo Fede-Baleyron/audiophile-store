@@ -10,7 +10,7 @@ export const YX1Card = () => {
       />
       <article className='yx1-card-info'>
         <h4>AURICULARES YX1</h4>
-        <Button text='VER PRODUCTO' type='secondary' />
+        <Button text='VER PRODUCTO' type='secondary' link='/categorias/auriculares/yx1' />
       </article>
     </article>
   )

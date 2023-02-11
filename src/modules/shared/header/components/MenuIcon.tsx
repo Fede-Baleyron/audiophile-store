@@ -1,9 +1,10 @@
+import { lazy } from 'react'
 import { iconsPath } from '../../../helpers/imagesRoutes'
 import { useMountTransition } from '../../../../hooks/useMountTransition'
 import useModal from '../../../../hooks/useModal'
-import Portal from '../../Portal'
-import Modal from '../../Modal'
 import Menu from './Menu'
+const Portal = lazy(() => import('../../Portal'))
+const Modal = lazy(() => import('../../Modal'))
 
 const MenuIcon = () => {
   const { handlePortal, portal } = useModal()
@@ -11,7 +12,7 @@ const MenuIcon = () => {
   return (
     <>
       <div className='menu-icon-container' onClick={handlePortal}>
-        <img 
+        <img
           className='menu-icon' 
           src={`${iconsPath}/icon-menu.svg`} 
           alt='Icono menú' 

@@ -19,6 +19,7 @@
 }
 .modal-children {
   position: relative;
+  padding: 1rem;
 }
 .close-btn {
   position: relative;

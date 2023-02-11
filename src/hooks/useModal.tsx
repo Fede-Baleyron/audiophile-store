@@ -4,7 +4,7 @@ import { Location, useLocation } from 'react-router-dom'
 const useModal = () => {
   const [portal, setPortal] = useState<boolean>(false)
   const { pathname }: Location = useLocation()
-  const handlePortal = (e: React.MouseEvent): void => {
+  const handlePortal = (): void => {
     setPortal(!portal)
   }
   useEffect(() => {

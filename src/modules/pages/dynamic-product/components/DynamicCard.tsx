@@ -14,7 +14,6 @@ export const DynamicCard = ({ items }: DynamicCardProp) => {
   selectedItem = items?.find(item => item.path === product)
   const isCategory = category !== undefined ? category : ''
   useEffect(() => {
-    console.log(selectedItem)
     if(contextData?.data[isCategory] === null) {
       contextData?.getData(isCategory)
     }
@@ -30,6 +29,7 @@ export const DynamicCard = ({ items }: DynamicCardProp) => {
         >
           <ProductCard
             key={selectedItem.id}
+            id={selectedItem.id}
             name={selectedItem.name}
             description={selectedItem.description}
             new={selectedItem.new}

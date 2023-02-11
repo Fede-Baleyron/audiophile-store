@@ -3,8 +3,10 @@
   top: 0;
   left: 0;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   width: 100vw;
   height: 100vh;
   z-index: 100;
@@ -17,6 +19,11 @@
 }
 .modal-children {
   position: relative;
+}
+.close-btn {
+  position: relative;
+  width: 56px;
+  height: 56px;
 }
 .fade-in {
   display: flex;

@@ -38,6 +38,7 @@ export const DynamicCard = ({ items }: DynamicCardProp) => {
             path={selectedItem.path}
             price={selectedItem.price}
             view='sell'
+            category={category}
             handleItem={cartData?.handleItem ? cartData?.handleItem : undefined}
           />
         </DynamicWrapper>

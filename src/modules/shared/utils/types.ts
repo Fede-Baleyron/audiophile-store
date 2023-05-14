@@ -9,6 +9,7 @@ export interface ProductCardProp {
   name: string
   path: string
   description: string
+  category: string | undefined
   id?: string
   price?: number
   even?: boolean

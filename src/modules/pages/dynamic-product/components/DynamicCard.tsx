@@ -5,10 +5,12 @@ import { Loader } from '../../../shared/Loader'
 import { CategoriesContext } from '../../context/CategoriesProvider'
 import { DynamicCardProp } from '../utils/dynamic-product-types'
 import { DynamicWrapper } from './DynamicWrapper'
+import { useCartContext } from '../../context/CartProvider'
 const ProductCard = lazy(() => import('../../../shared/ProductCard'))
 
 export const DynamicCard = ({ items }: DynamicCardProp) => {
   const contextData = useContext(CategoriesContext)
+  const cartData = useCartContext()
   const { product, category } = useParams()
   let selectedItem: ProductModel | undefined = undefined
   selectedItem = items?.find(item => item.path === product)
@@ -36,6 +38,7 @@ export const DynamicCard = ({ items }: DynamicCardProp) => {
             path={selectedItem.path}
             price={selectedItem.price}
             view='sell'
+            handleItem={cartData?.handleItem ? cartData?.handleItem : undefined}
           />
         </DynamicWrapper>
         : <Loader />

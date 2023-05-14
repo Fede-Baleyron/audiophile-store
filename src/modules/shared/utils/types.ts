@@ -9,10 +9,12 @@ export interface ProductCardProp {
   name: string
   path: string
   description: string
+  id?: string
   price?: number
   even?: boolean
   view: ('show' | 'sell')
   new: boolean
+  handleItem?(e: React.MouseEvent): void
 }
 export interface CategoryPageProp {
   category: string
@@ -25,4 +27,8 @@ export interface ModalProp {
 }
 export interface PortalProp {
   element: React.ReactNode
+}
+export interface ProductCounterProp {
+  counter: number,
+  handleProductQuantity(e: React.MouseEvent): void
 }
